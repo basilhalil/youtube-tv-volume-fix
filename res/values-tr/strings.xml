@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YouTube Ses Düzeltme</string>
+    <string name="service_label">YouTube\'da ses tuşları</string>
+    <string name="service_desc">Kumandanın ses tuşlarının YouTube TV uygulamasında çalışmasını sağlar. Yalnızca YouTube açıkken ses tuşlarına tepki verir. Ekrandakileri okumaz, veri toplamaz ve internet kullanmaz.</string>
+
+    <string name="fatiha_title">Küçük bir rica</string>
+    <string name="fatiha_msg">Bu uygulama, merhum Ahmed Halil\'in ruhu için sadaka-i câriye olarak ücretsizdir.\n\nLütfen ruhuna bir Fatiha okuyun.</string>
+    <string name="fatiha_done">Fatiha okudum</string>
+    <string name="fatiha_later">Daha sonra</string>
+    <string name="thanks">Allah razı olsun</string>
+
+    <string name="status_on">✅ Etkin: ses tuşları YouTube\'da çalışıyor</string>
+    <string name="status_off">⚠️ Henüz etkin değil</string>
+    <string name="open_settings">Erişilebilirlik ayarlarından etkinleştir</string>
+    <string name="disclosure_title">Etkinleştirmeden önce</string>
+    <string name="disclosure_msg">Bu uygulama Android Erişilebilirlik hizmetini yalnızca YouTube açıkken kumandanın ses tuşlarını yakalamak ve TV sesini değiştirmek için kullanır.\n\nEkranı okumaz, veri toplamaz ve internete bağlanmaz.\n\nSonraki ekranda “YouTube\'da ses tuşları” seçeneğini seçip açın.</string>
+    <string name="continue_btn">Devam</string>
+    <string name="cancel_btn">İptal</string>
+    <string name="no_settings_title">Erişilebilirlik ayarları bulunamadı</string>
+    <string name="no_settings_msg">Bu TV Erişilebilirlik ayarlarını gizliyor. Uygulamayı bir kez bilgisayardan ADB ile etkinleştirebilirsiniz:</string>
+    <string name="ok_btn">Tamam</string>
+
+    <string name="how_title">Nasıl çalışır</string>
+    <string name="how_msg">Bazı TV\'lerde sistem, ses tuşlarını kendisi işlemek yerine açık uygulamaya iletir. YouTube uygulaması bunları yok sayar, bu yüzden ses değişmez.\n\nYouTube açıkken bu uygulama ses tuşlarını yakalar ve TV sesini kendisi değiştirir. Diğer tuşlar ve uygulamalar olduğu gibi kalır.</string>
+    <string name="dedication">Merhum Ahmed Halil\'in ruhuna ithaf edilmiştir. Allah rahmet eylesin.</string>
+</resources>

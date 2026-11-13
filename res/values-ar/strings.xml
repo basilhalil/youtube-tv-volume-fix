@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">إصلاح صوت YouTube</string>
+    <string name="service_label">أزرار الصوت في YouTube</string>
+    <string name="service_desc">يجعل أزرار الصوت في الريموت تعمل داخل تطبيق YouTube للتلفزيون. لا يستجيب إلا لأزرار الصوت، وفقط عندما يكون YouTube مفتوحاً. لا يقرأ ما على الشاشة، ولا يجمع أي بيانات، ولا يستخدم الإنترنت.</string>
+
+    <string name="fatiha_title">طلب صغير</string>
+    <string name="fatiha_msg">هذا التطبيق مجاني، صدقةً جاريةً عن روح المرحوم أحمد خليل.\n\nنرجو أن تقرأ الفاتحة على روحه.</string>
+    <string name="fatiha_done">قرأتُ الفاتحة</string>
+    <string name="fatiha_later">لاحقاً</string>
+    <string name="thanks">جزاك الله خيراً</string>
+
+    <string name="status_on">✅ مفعّل: أزرار الصوت تعمل في YouTube</string>
+    <string name="status_off">⚠️ غير مفعّل بعد</string>
+    <string name="open_settings">التفعيل من إعدادات إمكانية الوصول</string>
+    <string name="disclosure_title">قبل التفعيل</string>
+    <string name="disclosure_msg">يستخدم هذا التطبيق خدمة إمكانية الوصول في Android فقط لالتقاط أزرار الصوت في الريموت عندما يكون YouTube مفتوحاً، وتغيير صوت التلفزيون.\n\nلا يقرأ الشاشة، ولا يجمع بيانات، ولا يتصل بالإنترنت.\n\nفي الشاشة التالية اختر «أزرار الصوت في YouTube» وفعّلها.</string>
+    <string name="continue_btn">متابعة</string>
+    <string name="cancel_btn">إلغاء</string>
+    <string name="no_settings_title">لم أجد إعدادات إمكانية الوصول</string>
+    <string name="no_settings_msg">هذا التلفزيون يخفي إعدادات إمكانية الوصول. يمكنك تفعيل التطبيق مرة واحدة من الكمبيوتر بأداة ADB:</string>
+    <string name="ok_btn">حسناً</string>
+
+    <string name="how_title">كيف يعمل</string>
+    <string name="how_msg">في بعض التلفزيونات، يمرّر النظام أزرار الصوت إلى التطبيق المفتوح بدل أن يعالجها بنفسه. تطبيق YouTube يتجاهلها، فلا يتغيّر الصوت.\n\nعندما يكون YouTube مفتوحاً، يلتقط هذا التطبيق أزرار الصوت ويغيّر صوت التلفزيون بنفسه. أما باقي الأزرار والتطبيقات فتبقى كما هي.</string>
+    <string name="dedication">إهداء إلى روح المرحوم أحمد خليل، رحمه الله.</string>
+</resources>

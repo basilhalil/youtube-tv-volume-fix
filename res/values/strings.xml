@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YouTube Volume Fix</string>
+    <string name="service_label">Volume keys in YouTube</string>
+    <string name="service_desc">Makes the remote\'s volume buttons work inside the YouTube TV app. It only reacts to the volume buttons while YouTube is open. It does not read what is on screen, collect any data, or use the internet.</string>
+
+    <string name="fatiha_title">A small request</string>
+    <string name="fatiha_msg">This app is free, as an ongoing charity (sadaqah jariyah) for the soul of the late Ahmed Khalil.\n\nPlease recite Al-Fatiha for his soul.</string>
+    <string name="fatiha_done">I recited Al-Fatiha</string>
+    <string name="fatiha_later">Later</string>
+    <string name="thanks">May Allah reward you</string>
+
+    <string name="status_on">✅ Enabled: the volume buttons work in YouTube</string>
+    <string name="status_off">⚠️ Not enabled yet</string>
+    <string name="open_settings">Enable in Accessibility settings</string>
+    <string name="disclosure_title">Before you enable it</string>
+    <string name="disclosure_msg">This app uses Android\'s Accessibility service only to catch the remote\'s volume buttons while YouTube is open, and change the TV volume.\n\nIt does not read the screen, collect data, or connect to the internet.\n\nIn the next screen, choose “Volume keys in YouTube” and turn it on.</string>
+    <string name="continue_btn">Continue</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="no_settings_title">Accessibility settings not found</string>
+    <string name="no_settings_msg">This TV hides its Accessibility settings. You can enable the app once from a computer with ADB:</string>
+    <string name="ok_btn">OK</string>
+
+    <string name="how_title">How it works</string>
+    <string name="how_msg">On some TVs, the system passes the volume buttons to the open app instead of handling them itself. The YouTube app ignores them, so the volume does not change.\n\nWhile YouTube is open, this app catches the volume buttons and changes the TV volume itself. All other buttons and apps are left as they are.</string>
+    <string name="dedication">Dedicated to the soul of the late Ahmed Khalil. May Allah have mercy on him.</string>
+</resources>
