@@ -139,5 +139,14 @@ bash build.sh <build-tools dir> <android.jar> <jdk bin dir>
 ```
 The signing key (`*.keystore`) is not in the repository. Keep your own key safe: updates must be signed with the same key.
 
-## License
-[MIT](LICENSE)
+## License · الرخصة · Lisans
+
+[GNU GPL v3](LICENSE), with one additional term (section 7b): any copy or modified version must keep the dedication to the late Ahmed Khalil visible in the app, and credit this project with a link. See [NOTICE](NOTICE).
+
+**Request:** If you build on this code, please also keep the message asking users to recite Al-Fatiha for his soul.
+
+**الرخصة:** [GNU GPL v3](LICENSE): يحق لك استخدام الكود وتعديله ونشره، بشرط أن تنشر كودك أنت أيضاً بالرخصة نفسها، وأن **تُبقي الإهداء إلى روح المرحوم أحمد خليل ظاهراً في التطبيق** مع رابط هذا المشروع.
+**ونرجو** ممن يستخدم الكود أن يُبقي أيضاً رسالة قراءة الفاتحة على روحه. جزاكم الله خيراً.
+
+**Lisans:** [GNU GPL v3](LICENSE): kodu kullanabilir, değiştirebilir ve yayabilirsiniz; ancak kendi kodunuzu da aynı lisansla yayınlamalı ve **merhum Ahmed Halil'e yapılan ithafı** bu projenin bağlantısıyla birlikte uygulamada görünür tutmalısınız.
+**Ricamız:** Fatiha okunmasını isteyen mesajı da korumanızdır. Allah razı olsun.

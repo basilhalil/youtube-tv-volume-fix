@@ -1,3 +1,8 @@
+/*
+ * YouTube Volume Fix - Copyright (C) 2026 basilhalil
+ * Licensed under the GNU GPL v3 with an additional term (section 7b): see LICENSE and NOTICE.
+ * Dedicated to the soul of the late Ahmed Khalil (المرحوم أحمد خليل).
+ */
 package app.ytvolumefix;
 
 import android.accessibilityservice.AccessibilityService;

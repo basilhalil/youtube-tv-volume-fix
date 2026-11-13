@@ -1,3 +1,11 @@
+/*
+ * YouTube Volume Fix - Copyright (C) 2026 basilhalil
+ * Licensed under the GNU GPL v3 with an additional term (section 7b): see LICENSE and NOTICE.
+ *
+ * This app is dedicated to the soul of the late Ahmed Khalil (المرحوم أحمد خليل).
+ * The dedication shown in the app must be kept in any copy or modified version.
+ * Request: please also keep the message asking users to recite Al-Fatiha for his soul.
+ */
 package app.ytvolumefix;
 
 import android.app.Activity;
