@@ -6,7 +6,7 @@
 
 [العربية](#العربية) · [English](#english) · [Türkçe](#türkçe)
 
-### 📺 Downloader code · رقم Downloader · Downloader kodu: **`7752330`**
+### 📺 Downloader code · رقم Downloader · Downloader kodu: **`4563572`**
 
 **Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest/download/yt-volume-fix.apk) (29 KB)
 SHA-256 (v1.2): `dbc22d0d58fdaf27ec00fe372f6037c73e8a7a64b4a415ff825f423adbe1a6ec`
@@ -28,7 +28,7 @@ SHA-256 (v1.2): `dbc22d0d58fdaf27ec00fe372f6037c73e8a7a64b4a415ff825f423adbe1a6e
 - مجاني تماماً، بدون إعلانات، ومفتوح المصدر.
 
 ### التثبيت
-1. **الطريقة الأسهل:** افتح تطبيق **Downloader** على التلفزيون، واكتب الرقم **`7752330`** ثم **Go**، ثم **تثبيت**.
+1. **الطريقة الأسهل:** افتح تطبيق **Downloader** على التلفزيون، واكتب الرقم **`4563572`** ثم **Go**، ثم **تثبيت**.
    أو نزّل ملف `yt-volume-fix.apk` وثبّته بفلاشة USB أو ADB:
    ```
    adb install yt-volume-fix.apk
@@ -71,7 +71,7 @@ While YouTube is open, it catches the **volume up, volume down and mute** button
 - Free, no ads, open source.
 
 ### Install
-1. **Easiest:** open the **Downloader** app on the TV, enter **`7752330`**, press **Go**, then **Install**.
+1. **Easiest:** open the **Downloader** app on the TV, enter **`4563572`**, press **Go**, then **Install**.
    Or download `yt-volume-fix.apk` and install it with a USB stick or ADB:
    ```
    adb install yt-volume-fix.apk
@@ -114,7 +114,7 @@ YouTube açıkken **ses açma, ses kısma ve sessiz** tuşlarını yakalar ve TV
 - Ücretsiz, reklamsız, açık kaynak.
 
 ### Kurulum
-1. **En kolayı:** TV'de **Downloader** uygulamasını açın, **`7752330`** yazın, **Go**'ya ve ardından **Yükle**'ye basın.
+1. **En kolayı:** TV'de **Downloader** uygulamasını açın, **`4563572`** yazın, **Go**'ya ve ardından **Yükle**'ye basın.
    Ya da `yt-volume-fix.apk` dosyasını indirip USB bellek veya ADB ile kurun:
    ```
    adb install yt-volume-fix.apk
