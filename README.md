@@ -6,7 +6,7 @@
 
 [العربية](#العربية) · [English](#english) · [Türkçe](#türkçe)
 
-### 📺 Downloader code · رقم Downloader · Downloader kodu: **`9709320`**
+### 📺 Downloader code · رقم Downloader · Downloader kodu: **`7752330`**
 
 **Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix-v1.1.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/download/v1.1/yt-volume-fix-v1.1.apk) (25 KB)
 SHA-256 (v1.1): `e2956f46bc45dd45086c4d254c456cf0327ba23a6c85c2e595b240d18bd7ee4f`
@@ -28,7 +28,7 @@ SHA-256 (v1.1): `e2956f46bc45dd45086c4d254c456cf0327ba23a6c85c2e595b240d18bd7ee4
 - مجاني تماماً، بدون إعلانات، ومفتوح المصدر.
 
 ### التثبيت
-1. **الطريقة الأسهل:** افتح تطبيق **Downloader** على التلفزيون، واكتب الرقم **`9709320`** ثم **Go**، ثم **تثبيت**.
+1. **الطريقة الأسهل:** افتح تطبيق **Downloader** على التلفزيون، واكتب الرقم **`7752330`** ثم **Go**، ثم **تثبيت**.
    أو نزّل ملف `yt-volume-fix-v1.1.apk` وثبّته بفلاشة USB أو ADB:
    ```
    adb install yt-volume-fix-v1.1.apk
@@ -69,7 +69,7 @@ While YouTube is open, it catches the **volume up, volume down and mute** button
 - Free, no ads, open source.
 
 ### Install
-1. **Easiest:** open the **Downloader** app on the TV, enter **`9709320`**, press **Go**, then **Install**.
+1. **Easiest:** open the **Downloader** app on the TV, enter **`7752330`**, press **Go**, then **Install**.
    Or download `yt-volume-fix-v1.1.apk` and install it with a USB stick or ADB:
    ```
    adb install yt-volume-fix-v1.1.apk
@@ -110,7 +110,7 @@ YouTube açıkken **ses açma, ses kısma ve sessiz** tuşlarını yakalar ve TV
 - Ücretsiz, reklamsız, açık kaynak.
 
 ### Kurulum
-1. **En kolayı:** TV'de **Downloader** uygulamasını açın, **`9709320`** yazın, **Go**'ya ve ardından **Yükle**'ye basın.
+1. **En kolayı:** TV'de **Downloader** uygulamasını açın, **`7752330`** yazın, **Go**'ya ve ardından **Yükle**'ye basın.
    Ya da `yt-volume-fix-v1.1.apk` dosyasını indirip USB bellek veya ADB ile kurun:
    ```
    adb install yt-volume-fix-v1.1.apk
