@@ -1,5 +1,10 @@
 out/
 *.keystore
+*.keystore.bak*
 *.jks
 *.apk
+*.idsig
 !releases/*.apk
+SIGNING-SECRET.txt
+*.secret
+.env

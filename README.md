@@ -8,8 +8,8 @@
 
 ### 📺 Downloader code · رقم Downloader · Downloader kodu: **`9709320`**
 
-**Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix-v1.0.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/download/v1.0/yt-volume-fix-v1.0.apk) (25 KB)
-SHA-256: `ad5106003c5b6b4493916aad64943c899307ad8b37807543323220924e5ec987`
+**Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix-v1.1.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/download/v1.1/yt-volume-fix-v1.1.apk) (25 KB)
+SHA-256 (v1.1): `e2956f46bc45dd45086c4d254c456cf0327ba23a6c85c2e595b240d18bd7ee4f`
 
 ---
 
@@ -29,9 +29,9 @@ SHA-256: `ad5106003c5b6b4493916aad64943c899307ad8b37807543323220924e5ec987`
 
 ### التثبيت
 1. **الطريقة الأسهل:** افتح تطبيق **Downloader** على التلفزيون، واكتب الرقم **`9709320`** ثم **Go**، ثم **تثبيت**.
-   أو نزّل ملف `yt-volume-fix-v1.0.apk` وثبّته بفلاشة USB أو ADB:
+   أو نزّل ملف `yt-volume-fix-v1.1.apk` وثبّته بفلاشة USB أو ADB:
    ```
-   adb install yt-volume-fix-v1.0.apk
+   adb install yt-volume-fix-v1.1.apk
    ```
 2. افتح التطبيق **"إصلاح صوت YouTube"**.
 3. اضغط **"التفعيل من إعدادات إمكانية الوصول"** ثم **متابعة**.
@@ -70,9 +70,9 @@ While YouTube is open, it catches the **volume up, volume down and mute** button
 
 ### Install
 1. **Easiest:** open the **Downloader** app on the TV, enter **`9709320`**, press **Go**, then **Install**.
-   Or download `yt-volume-fix-v1.0.apk` and install it with a USB stick or ADB:
+   Or download `yt-volume-fix-v1.1.apk` and install it with a USB stick or ADB:
    ```
-   adb install yt-volume-fix-v1.0.apk
+   adb install yt-volume-fix-v1.1.apk
    ```
 2. Open **"YouTube Volume Fix"**.
 3. Select **"Enable in Accessibility settings"**, then **Continue**.
@@ -111,9 +111,9 @@ YouTube açıkken **ses açma, ses kısma ve sessiz** tuşlarını yakalar ve TV
 
 ### Kurulum
 1. **En kolayı:** TV'de **Downloader** uygulamasını açın, **`9709320`** yazın, **Go**'ya ve ardından **Yükle**'ye basın.
-   Ya da `yt-volume-fix-v1.0.apk` dosyasını indirip USB bellek veya ADB ile kurun:
+   Ya da `yt-volume-fix-v1.1.apk` dosyasını indirip USB bellek veya ADB ile kurun:
    ```
-   adb install yt-volume-fix-v1.0.apk
+   adb install yt-volume-fix-v1.1.apk
    ```
 2. **"YouTube Ses Düzeltme"** uygulamasını açın.
 3. **"Erişilebilirlik ayarlarından etkinleştir"** ve ardından **Devam**'ı seçin.
@@ -136,13 +136,29 @@ adb shell settings put secure accessibility_enabled 1
 
 ---
 
+## Security & privacy · الأمان والخصوصية · Güvenlik ve gizlilik
+
+- **No permissions at all.** Not even internet: the app cannot send anything anywhere.
+- **Least-privilege Accessibility service (since v1.1):** it can only filter key presses and see *which app* is in front. It **cannot read screen content** (`canRetrieveWindowContent="false"`).
+- It reacts only to Volume Up / Down / Mute, and only while a YouTube app is in front. Every other key passes through untouched.
+- No data collection, no analytics, no ads, no third-party libraries. About 240 lines of code you can read in [`src/`](src/).
+- Every release lists its SHA-256 so you can verify the file you downloaded.
+
+- **لا يطلب أي صلاحية،** ولا حتى الإنترنت، فلا يستطيع إرسال أي شيء إلى أي مكان.
+- **منذ v1.1 لا يستطيع قراءة محتوى الشاشة إطلاقاً.** يعرف فقط اسم التطبيق المفتوح، ويلتقط أزرار الصوت.
+- لا جمع بيانات، ولا إعلانات، ولا مكتبات خارجية. الكود كله حوالي 240 سطراً.
+
+- **Hiçbir izin istemez,** internet bile: hiçbir yere veri gönderemez.
+- **v1.1'den beri ekran içeriğini okuyamaz.** Yalnızca öndeki uygulamanın adını bilir ve ses tuşlarını yakalar.
+- Veri toplama, reklam veya üçüncü taraf kütüphane yok. Tüm kod yaklaşık 240 satır.
+
 ## Build from source
 
 No Gradle needed. Requires JDK 8+, Android SDK Build-Tools 30.0.3 and the Android 8.0 (API 26) platform:
 ```
-bash build.sh <build-tools dir> <android.jar> <jdk bin dir>
+YTVF_KS_PASS=<your keystore password> bash build.sh <build-tools dir> <android.jar> <jdk bin dir>
 ```
-The signing key (`*.keystore`) is not in the repository. Keep your own key safe: updates must be signed with the same key.
+The signing key (`*.keystore`) and its password are not in the repository. To build your own copy, create your own key with `keytool`. Official releases are signed only by the maintainer, with certificate SHA-256 `89:29:01:D2:BE:05:5C:F3:A8:17:C9:8A:E3:E8:B5:25:FD:4E:C9:CF:DD:65:BA:EA:84:25:29:E3:35:CA:99:A5`.
 
 ## License · الرخصة · Lisans
 

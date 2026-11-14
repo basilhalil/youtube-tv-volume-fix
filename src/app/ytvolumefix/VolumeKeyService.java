@@ -11,7 +11,6 @@ import android.media.AudioManager;
 import android.os.Build;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
-import android.view.accessibility.AccessibilityNodeInfo;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -43,16 +42,11 @@ public class VolumeKeyService extends AccessibilityService {
         foreground = pkg;
     }
 
+    /**
+     * Only the package name of the app in front is ever looked at (from window-change events).
+     * The service cannot read screen content: canRetrieveWindowContent is off in volume_service.xml.
+     */
     private boolean youtubeInFront() {
-        try {
-            AccessibilityNodeInfo root = getRootInActiveWindow();
-            if (root != null) {
-                CharSequence p = root.getPackageName();
-                root.recycle();
-                if (p != null) return YOUTUBE_APPS.contains(p.toString());
-            }
-        } catch (Exception ignored) {
-        }
         return YOUTUBE_APPS.contains(foreground);
     }
 
