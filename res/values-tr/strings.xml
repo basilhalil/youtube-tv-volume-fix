@@ -12,6 +12,12 @@
 
     <string name="status_on">✅ Etkin: ses tuşları YouTube\'da çalışıyor</string>
     <string name="status_off">⚠️ Henüz etkin değil</string>
+    <string name="status_learning">✅ Etkin. YouTube\'u açıp bir ses tuşuna bir kez basın: uygulama TV\'nizin buna ihtiyacı olup olmadığını kontrol edecek.</string>
+    <string name="status_native">ℹ️ TV\'nizin bu uygulamaya ihtiyacı yok: ses tuşları YouTube\'da zaten çalışıyor, bu yüzden uygulama karışmıyor.</string>
+    <string name="status_unsupported">ℹ️ TV\'niz sesi kendine özgü bir şekilde kontrol ediyor ve bu uygulama yardımcı olamıyor. Uygulama karışmıyor.</string>
+    <string name="status_fixed">ℹ️ Bu cihaz sesi TV veya ses sistemi üzerinden (HDMI-CEC) kontrol ediyor. Bu uygulamaya ihtiyacı yok.</string>
+    <string name="recheck_btn">TV\'mi yeniden kontrol et</string>
+    <string name="recheck_done">YouTube\'u açın ve bir ses tuşuna bir kez basın.</string>
     <string name="open_settings">Erişilebilirlik ayarlarından etkinleştir</string>
     <string name="disclosure_title">Etkinleştirmeden önce</string>
     <string name="disclosure_msg">Bu uygulama Android Erişilebilirlik hizmetini yalnızca YouTube açıkken kumandanın ses tuşlarını yakalamak ve TV sesini değiştirmek için kullanır.\n\nEkranı okumaz, veri toplamaz ve internete bağlanmaz.\n\nSonraki ekranda “YouTube\'da ses tuşları” seçeneğini seçip açın.</string>

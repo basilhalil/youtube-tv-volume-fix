@@ -12,6 +12,12 @@
 
     <string name="status_on">✅ مفعّل: أزرار الصوت تعمل في YouTube</string>
     <string name="status_off">⚠️ غير مفعّل بعد</string>
+    <string name="status_learning">✅ مفعّل. افتح YouTube واضغط زر الصوت مرة واحدة، ليتأكد التطبيق هل يحتاجه تلفزيونك.</string>
+    <string name="status_native">ℹ️ تلفزيونك لا يحتاج هذا التطبيق: أزرار الصوت تعمل في YouTube أصلاً، لذلك لا يتدخل التطبيق.</string>
+    <string name="status_unsupported">ℹ️ تلفزيونك يتحكم بالصوت بطريقة خاصة لا يستطيع هذا التطبيق مساعدتها، لذلك لا يتدخل.</string>
+    <string name="status_fixed">ℹ️ هذا الجهاز يتحكم بالصوت عبر التلفزيون أو نظام الصوت (HDMI-CEC)، ولا يحتاج هذا التطبيق.</string>
+    <string name="recheck_btn">افحص تلفزيوني من جديد</string>
+    <string name="recheck_done">افتح YouTube واضغط زر الصوت مرة واحدة.</string>
     <string name="open_settings">التفعيل من إعدادات إمكانية الوصول</string>
     <string name="disclosure_title">قبل التفعيل</string>
     <string name="disclosure_msg">يستخدم هذا التطبيق خدمة إمكانية الوصول في Android فقط لالتقاط أزرار الصوت في الريموت عندما يكون YouTube مفتوحاً، وتغيير صوت التلفزيون.\n\nلا يقرأ الشاشة، ولا يجمع بيانات، ولا يتصل بالإنترنت.\n\nفي الشاشة التالية اختر «أزرار الصوت في YouTube» وفعّلها.</string>

@@ -12,6 +12,12 @@
 
     <string name="status_on">✅ Enabled: the volume buttons work in YouTube</string>
     <string name="status_off">⚠️ Not enabled yet</string>
+    <string name="status_learning">✅ Enabled. Open YouTube and press a volume button once: the app will check whether your TV needs it.</string>
+    <string name="status_native">ℹ️ Your TV does not need this app: the volume buttons already work in YouTube, so the app stays out of the way.</string>
+    <string name="status_unsupported">ℹ️ Your TV controls the volume in its own way, which this app cannot help with. The app stays out of the way.</string>
+    <string name="status_fixed">ℹ️ This device controls the volume through the TV or sound system (HDMI-CEC). It does not need this app.</string>
+    <string name="recheck_btn">Check my TV again</string>
+    <string name="recheck_done">Open YouTube and press a volume button once.</string>
     <string name="open_settings">Enable in Accessibility settings</string>
     <string name="disclosure_title">Before you enable it</string>
     <string name="disclosure_msg">This app uses Android\'s Accessibility service only to catch the remote\'s volume buttons while YouTube is open, and change the TV volume.\n\nIt does not read the screen, collect data, or connect to the internet.\n\nIn the next screen, choose “Volume keys in YouTube” and turn it on.</string>

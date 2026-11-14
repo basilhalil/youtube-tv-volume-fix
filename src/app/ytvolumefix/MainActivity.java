@@ -15,6 +15,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -34,6 +35,7 @@ public class MainActivity extends Activity {
 
     private TextView status;
     private Button enable;
+    private Button recheck;
 
     @Override
     protected void onCreate(Bundle b) {
@@ -60,6 +62,19 @@ public class MainActivity extends Activity {
         });
         col.addView(enable);
 
+        recheck = new Button(this);
+        recheck.setText(R.string.recheck_btn);
+        recheck.setTextSize(18);
+        recheck.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                getSharedPreferences(VolumeKeyService.PREFS, MODE_PRIVATE).edit()
+                        .putInt(VolumeKeyService.KEY_MODE, VolumeKeyService.MODE_UNKNOWN).apply();
+                Toast.makeText(MainActivity.this, R.string.recheck_done, Toast.LENGTH_LONG).show();
+                refreshStatus();
+            }
+        });
+        col.addView(recheck);
+
         TextView howTitle = text(getString(R.string.how_title), 22, Color.WHITE);
         howTitle.setTypeface(Typeface.DEFAULT_BOLD);
         howTitle.setPadding(0, dp(28), 0, dp(6));
@@ -81,10 +96,33 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        boolean on = isServiceEnabled();
-        status.setText(on ? R.string.status_on : R.string.status_off);
-        status.setTextColor(on ? Color.rgb(165, 214, 167) : Color.rgb(255, 204, 128));
+        refreshStatus();
         enable.requestFocus();
+    }
+
+    /** Tells the user plainly whether their device needs the app, based on what the service learned. */
+    private void refreshStatus() {
+        AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
+        int mode = getSharedPreferences(VolumeKeyService.PREFS, MODE_PRIVATE)
+                .getInt(VolumeKeyService.KEY_MODE, VolumeKeyService.MODE_UNKNOWN);
+        int msg;
+        boolean good;
+        if (am != null && VolumeKeyService.isFixedVolume(am)) {
+            msg = R.string.status_fixed; good = false;
+        } else if (!isServiceEnabled()) {
+            msg = R.string.status_off; good = false;
+        } else if (mode == VolumeKeyService.MODE_FIX) {
+            msg = R.string.status_on; good = true;
+        } else if (mode == VolumeKeyService.MODE_NATIVE) {
+            msg = R.string.status_native; good = false;
+        } else if (mode == VolumeKeyService.MODE_UNSUPPORTED) {
+            msg = R.string.status_unsupported; good = false;
+        } else {
+            msg = R.string.status_learning; good = true;
+        }
+        status.setText(msg);
+        status.setTextColor(good ? Color.rgb(165, 214, 167) : Color.rgb(255, 204, 128));
+        recheck.setVisibility(mode == VolumeKeyService.MODE_UNKNOWN ? View.GONE : View.VISIBLE);
     }
 
     /** Shown every time the app is opened, as the app's author asked. Never blocks the app. */

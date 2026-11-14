@@ -8,8 +8,8 @@
 
 ### 📺 Downloader code · رقم Downloader · Downloader kodu: **`7752330`**
 
-**Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix-v1.1.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/download/v1.1/yt-volume-fix-v1.1.apk) (25 KB)
-SHA-256 (v1.1): `e2956f46bc45dd45086c4d254c456cf0327ba23a6c85c2e595b240d18bd7ee4f`
+**Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest/download/yt-volume-fix.apk) (29 KB)
+SHA-256 (v1.2): `dbc22d0d58fdaf27ec00fe372f6037c73e8a7a64b4a415ff825f423adbe1a6ec`
 
 ---
 
@@ -29,9 +29,9 @@ SHA-256 (v1.1): `e2956f46bc45dd45086c4d254c456cf0327ba23a6c85c2e595b240d18bd7ee4
 
 ### التثبيت
 1. **الطريقة الأسهل:** افتح تطبيق **Downloader** على التلفزيون، واكتب الرقم **`7752330`** ثم **Go**، ثم **تثبيت**.
-   أو نزّل ملف `yt-volume-fix-v1.1.apk` وثبّته بفلاشة USB أو ADB:
+   أو نزّل ملف `yt-volume-fix.apk` وثبّته بفلاشة USB أو ADB:
    ```
-   adb install yt-volume-fix-v1.1.apk
+   adb install yt-volume-fix.apk
    ```
 2. افتح التطبيق **"إصلاح صوت YouTube"**.
 3. اضغط **"التفعيل من إعدادات إمكانية الوصول"** ثم **متابعة**.
@@ -51,6 +51,8 @@ adb shell settings put secure accessibility_enabled 1
 ### ملاحظات
 - **جُرّب على:** شاشة بلوحة MStar/Cultraview بنظام Android 8.0.
 - **قد لا يعمل** على تلفزيونات تتحكم بالصوت بطريقة خاصة بالشركة المصنّعة (عبر HDMI-CEC أو مكبّر صوت خارجي). إن جرّبته، أخبرنا بالنتيجة في [Issues](../../issues).
+- **آمن على كل الأجهزة (منذ v1.2):** يتعرّف التطبيق بنفسه على جهازك. عند أول ضغطة صوت داخل YouTube يترك الضغطة تمر، ثم يتحقق هل تغيّر الصوت. إذا كانت الأزرار تعمل أصلاً، أو كان الصوت يُدار عبر HDMI-CEC، **لا يتدخل أبداً**، فلا يُفسد الصوت على أي جهاز. ويُظهر لك في شاشته هل يحتاجه تلفزيونك.
+- إذا أوقفت التطبيق إجبارياً (Force stop) من الإعدادات، يُطفئ Android خدمته تلقائياً، فأعد تفعيلها.
 
 ---
 
@@ -70,9 +72,9 @@ While YouTube is open, it catches the **volume up, volume down and mute** button
 
 ### Install
 1. **Easiest:** open the **Downloader** app on the TV, enter **`7752330`**, press **Go**, then **Install**.
-   Or download `yt-volume-fix-v1.1.apk` and install it with a USB stick or ADB:
+   Or download `yt-volume-fix.apk` and install it with a USB stick or ADB:
    ```
-   adb install yt-volume-fix-v1.1.apk
+   adb install yt-volume-fix.apk
    ```
 2. Open **"YouTube Volume Fix"**.
 3. Select **"Enable in Accessibility settings"**, then **Continue**.
@@ -92,6 +94,8 @@ adb shell settings put secure accessibility_enabled 1
 ### Notes
 - **Tested on:** an MStar / Cultraview TV running Android 8.0.
 - **May not work** on TVs whose maker controls volume in its own way (HDMI-CEC, external sound systems). If you try it, please report the result in [Issues](../../issues).
+- **Safe on any device (since v1.2):** the app learns how your device behaves. On the first volume press inside YouTube it lets the press through and checks whether the volume changed. If the buttons already work, or the volume is controlled over HDMI-CEC, it **never steps in**, so it cannot break volume on any device. Its screen tells you whether your TV needs it.
+- If you **Force stop** the app in Settings, Android turns its service off. Just enable it again.
 
 ---
 
@@ -111,9 +115,9 @@ YouTube açıkken **ses açma, ses kısma ve sessiz** tuşlarını yakalar ve TV
 
 ### Kurulum
 1. **En kolayı:** TV'de **Downloader** uygulamasını açın, **`7752330`** yazın, **Go**'ya ve ardından **Yükle**'ye basın.
-   Ya da `yt-volume-fix-v1.1.apk` dosyasını indirip USB bellek veya ADB ile kurun:
+   Ya da `yt-volume-fix.apk` dosyasını indirip USB bellek veya ADB ile kurun:
    ```
-   adb install yt-volume-fix-v1.1.apk
+   adb install yt-volume-fix.apk
    ```
 2. **"YouTube Ses Düzeltme"** uygulamasını açın.
 3. **"Erişilebilirlik ayarlarından etkinleştir"** ve ardından **Devam**'ı seçin.
@@ -133,6 +137,8 @@ adb shell settings put secure accessibility_enabled 1
 ### Notlar
 - **Test edildi:** Android 8.0 çalışan MStar / Cultraview TV.
 - Sesi üreticiye özel yöntemle kontrol eden TV'lerde (HDMI-CEC, harici ses sistemi) **çalışmayabilir**. Denerseniz sonucu [Issues](../../issues) bölümüne yazın.
+- **Her cihazda güvenli (v1.2'den beri):** uygulama cihazınızı kendisi tanır. YouTube'daki ilk ses tuşu basışını geçirir ve sesin değişip değişmediğini kontrol eder. Tuşlar zaten çalışıyorsa veya ses HDMI-CEC ile kontrol ediliyorsa **hiç karışmaz**, bu yüzden hiçbir cihazda sesi bozamaz. Ekranında TV'nizin ona ihtiyacı olup olmadığını gösterir.
+- Uygulamayı Ayarlar'dan **Zorla durdurursanız**, Android hizmetini kapatır. Tekrar etkinleştirmeniz yeterli.
 
 ---
 
