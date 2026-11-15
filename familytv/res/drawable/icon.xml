@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Family TV icon: a gold crescent and star sheltered under a house roof, on deep emerald. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#0B3D2E"
+        android:pathData="M24,0h60a24,24 0 0 1 24,24v60a24,24 0 0 1 -24,24h-60a24,24 0 0 1 -24,-24v-60a24,24 0 0 1 24,-24z" />
+    <!-- roof -->
+    <path android:strokeColor="#E8C26A" android:strokeWidth="6" android:strokeLineCap="round"
+        android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M18,52 L54,22 L90,52" />
+    <!-- walls -->
+    <path android:strokeColor="#E8C26A" android:strokeWidth="5" android:strokeLineCap="round"
+        android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M28,48 L28,88 L80,88 L80,48" />
+    <!-- crescent: gold disc covered by an offset emerald disc -->
+    <path android:fillColor="#E8C26A"
+        android:pathData="M54,51m-16,0a16,16 0 1 0 32,0a16,16 0 1 0 -32,0" />
+    <path android:fillColor="#0B3D2E"
+        android:pathData="M60,47m-14,0a14,14 0 1 0 28,0a14,14 0 1 0 -28,0" />
+    <!-- star -->
+    <path android:fillColor="#E8C26A"
+        android:pathData="M66,58 L67.8,62.6 L72.6,62.8 L68.8,65.8 L70.2,70.4 L66,67.7 L61.8,70.4 L63.2,65.8 L59.4,62.8 L64.2,62.6 Z" />
+</vector>

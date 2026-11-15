@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">فاميلي TV</string>
+    <string name="tagline">قنوات إسلامية وعائلية</string>
+
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_islamic">الحرمين والقنوات الإسلامية</string>
+    <string name="nav_quran">القرآن الكريم</string>
+    <string name="nav_prayer">أوقات الصلاة</string>
+    <string name="nav_arabic">قنوات عربية</string>
+    <string name="nav_kids">أطفال وعائلة</string>
+    <string name="nav_turkish">القنوات التركية</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <string name="next_prayer">الصلاة القادمة</string>
+    <string name="in_time">بعد %1$s</string>
+    <string name="ayah_of_day">آية اليوم</string>
+    <string name="quick">وصول سريع</string>
+    <string name="live">مباشر</string>
+    <string name="channel">قناة</string>
+    <string name="opens_youtube">يفتح في YouTube</string>
+
+    <string name="fajr">الفجر</string>
+    <string name="sunrise">الشروق</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="adhan_now">حان الآن موعد صلاة %1$s</string>
+    <string name="prayer_note">محسوبة على الشاشة لمدينة %1$s · %2$s. قد تختلف عن مسجدك بدقيقة أو دقيقتين.</string>
+
+    <string name="radios">إذاعات القرآن</string>
+    <string name="reciters">القرّاء</string>
+    <string name="surahs">السور</string>
+    <string name="loading">جارٍ التحميل…</string>
+    <string name="load_failed">تعذّر التحميل. تأكد من الاتصال بالإنترنت ثم اضغط OK لإعادة المحاولة.</string>
+    <string name="now_playing">يُتلى الآن</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="play">تشغيل</string>
+    <string name="stop">إيقاف</string>
+    <string name="back">رجوع</string>
+    <string name="surah_n">سورة %1$s</string>
+    <string name="mp3quran_credit">التلاوات من موقع mp3quran.net</string>
+
+    <string name="city">المدينة</string>
+    <string name="method">طريقة الحساب</string>
+    <string name="asr_method">العصر</string>
+    <string name="asr_standard">الجمهور (الشافعي والمالكي والحنبلي)</string>
+    <string name="asr_hanafi">الحنفي</string>
+    <string name="method_diyanet">رئاسة الشؤون الدينية (تركيا)</string>
+    <string name="method_umm_al_qura">أم القرى (مكة المكرمة)</string>
+    <string name="method_mwl">رابطة العالم الإسلامي</string>
+    <string name="method_egypt">الهيئة المصرية العامة للمساحة</string>
+    <string name="method_karachi">جامعة العلوم الإسلامية بكراتشي</string>
+    <string name="method_isna">الجمعية الإسلامية لأمريكا الشمالية</string>
+    <string name="about">مجاني، بدون إعلانات، ومفتوح المصدر. القنوات المباشرة تُفتح في تطبيق YouTube الرسمي من قنوات أصحابها.</string>
+    <string name="dedication">صدقة جارية عن روح المرحوم أحمد خليل. نرجو أن تقرأ الفاتحة على روحه.</string>
+    <string name="no_youtube">تطبيق YouTube غير مثبّت على هذه الشاشة.</string>
+</resources>

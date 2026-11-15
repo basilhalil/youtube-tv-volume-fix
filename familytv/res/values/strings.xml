@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Family TV</string>
+    <string name="tagline">Islamic &amp; family channels</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_islamic">Haramain &amp; Islamic</string>
+    <string name="nav_quran">Holy Quran</string>
+    <string name="nav_prayer">Prayer times</string>
+    <string name="nav_arabic">Arabic channels</string>
+    <string name="nav_kids">Kids &amp; family</string>
+    <string name="nav_turkish">Turkish channels</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="next_prayer">Next prayer</string>
+    <string name="in_time">in %1$s</string>
+    <string name="ayah_of_day">Verse of the day</string>
+    <string name="quick">Quick access</string>
+    <string name="live">LIVE</string>
+    <string name="channel">Channel</string>
+    <string name="opens_youtube">Opens in YouTube</string>
+
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="adhan_now">It is now time for %1$s prayer</string>
+    <string name="prayer_note">Calculated on the TV for %1$s · %2$s. It may differ from your local mosque by a minute or two.</string>
+
+    <string name="radios">Quran radios</string>
+    <string name="reciters">Reciters</string>
+    <string name="surahs">Surahs</string>
+    <string name="loading">Loading…</string>
+    <string name="load_failed">Could not load. Check the internet connection, then press OK to retry.</string>
+    <string name="now_playing">Now playing</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="back">Back</string>
+    <string name="surah_n">Surah %1$s</string>
+    <string name="mp3quran_credit">Audio from mp3quran.net</string>
+
+    <string name="city">City</string>
+    <string name="method">Calculation method</string>
+    <string name="asr_method">Asr</string>
+    <string name="asr_standard">Standard (Shafi\'i, Maliki, Hanbali)</string>
+    <string name="asr_hanafi">Hanafi</string>
+    <string name="method_diyanet">Diyanet (Turkey)</string>
+    <string name="method_umm_al_qura">Umm al-Qura (Makkah)</string>
+    <string name="method_mwl">Muslim World League</string>
+    <string name="method_egypt">Egyptian Authority</string>
+    <string name="method_karachi">Karachi</string>
+    <string name="method_isna">ISNA (North America)</string>
+    <string name="about">Free, no ads, open source. Live channels open in the official YouTube app from the broadcasters\' own channels.</string>
+    <string name="dedication">Sadaqah jariyah for the soul of the late Ahmed Khalil. Please recite Al-Fatiha for him.</string>
+    <string name="no_youtube">The YouTube app is not installed on this TV.</string>
+</resources>

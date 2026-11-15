@@ -1,0 +1,104 @@
+{
+  "_note": "Every entry is the broadcaster's own official YouTube channel (verified 2026-11-15). live=true opens the channel's current live stream; live=false opens the channel page.",
+  "pages": {
+    "islamic": [
+      {
+        "title": {"ar": "الحرمين الشريفين", "tr": "Harameyn-i Şerifeyn", "en": "The Two Holy Mosques"},
+        "items": [
+          {"n": {"ar": "المسجد الحرام", "tr": "Mescid-i Haram", "en": "Masjid al-Haram"},
+           "d": {"ar": "قناة القرآن الكريم · مكة المكرمة", "tr": "Kur'an-ı Kerim Kanalı · Mekke", "en": "Quran TV · Makkah"},
+           "yt": "UCos52azQNBgW63_9uDJoPDA", "live": true, "c": "#0E6B4F", "g": "🕋", "big": true},
+          {"n": {"ar": "المسجد النبوي", "tr": "Mescid-i Nebevi", "en": "Masjid an-Nabawi"},
+           "d": {"ar": "قناة السنة النبوية · المدينة المنورة", "tr": "Sünnet Kanalı · Medine", "en": "Sunnah TV · Madinah"},
+           "yt": "UCROKYPep-UuODNwyipe6JMw", "live": true, "c": "#1B5E7A", "g": "🕌", "big": true}
+        ]
+      },
+      {
+        "title": {"ar": "قنوات إسلامية تركية", "tr": "İslami kanallar", "en": "Turkish Islamic channels"},
+        "items": [
+          {"n": {"ar": "ديانت TV", "tr": "Diyanet TV", "en": "Diyanet TV"},
+           "d": {"ar": "رئاسة الشؤون الدينية التركية", "tr": "Diyanet İşleri Başkanlığı", "en": "Turkish Presidency of Religious Affairs"},
+           "yt": "UC3d1AdmvAP6Jq16-WpD086g", "live": true, "c": "#2E7D32", "g": "☪"},
+          {"n": {"ar": "سمرقند TV", "tr": "Semerkand TV", "en": "Semerkand TV"},
+           "d": {"ar": "برامج دينية وعائلية", "tr": "Dini ve aile programları", "en": "Religious & family programmes"},
+           "yt": "UClPSWo5-c28YaFzUawH_oHA", "live": true, "c": "#00695C", "g": "✦"}
+        ]
+      }
+    ],
+    "arabic": [
+      {
+        "title": {"ar": "أخبار", "tr": "Haber", "en": "News"},
+        "items": [
+          {"n": {"ar": "الجزيرة", "tr": "El Cezire", "en": "Al Jazeera"}, "yt": "UCfiwzLy-8yKzIbsmZTzxDgw", "live": true, "c": "#B8860B", "g": "ج"},
+          {"n": {"ar": "العربية", "tr": "El Arabiya", "en": "Al Arabiya"}, "yt": "UCahpxixMCwoANAftn6IxkTg", "live": true, "c": "#1565C0", "g": "ع"},
+          {"n": {"ar": "الحدث", "tr": "El Hadath", "en": "Al Hadath"}, "yt": "UCrj5BGAhtWxDfqbza9T9hqA", "live": true, "c": "#C62828", "g": "ح"},
+          {"n": {"ar": "سكاي نيوز عربية", "tr": "Sky News Arabia", "en": "Sky News Arabia"}, "yt": "UCIJXOvggjKtCagMfxvcCzAA", "live": true, "c": "#283593", "g": "S"},
+          {"n": {"ar": "الشرق", "tr": "Asharq News", "en": "Asharq News"}, "yt": "UCRJUVYt9gjg8MnlGacySUdg", "live": true, "c": "#37474F", "g": "ش"},
+          {"n": {"ar": "TRT عربي", "tr": "TRT Arabi", "en": "TRT Arabi"}, "yt": "UC5GvVahlgulCyo4cshSmbcg", "live": true, "c": "#AD1457", "g": "T"},
+          {"n": {"ar": "فرانس 24", "tr": "France 24 Arapça", "en": "France 24 Arabic"}, "yt": "UCdTyuXgmJkG_O8_75eqej-w", "live": true, "c": "#0277BD", "g": "F"},
+          {"n": {"ar": "بي بي سي عربي", "tr": "BBC Arapça", "en": "BBC News Arabic"}, "yt": "UCelk6aHijZq-GJBBB9YpReA", "live": true, "c": "#8E0000", "g": "B"},
+          {"n": {"ar": "DW عربية", "tr": "DW Arapça", "en": "DW Arabic"}, "yt": "UC30ditU5JI16o5NbFsHde_Q", "live": true, "c": "#0D47A1", "g": "D"}
+        ]
+      },
+      {
+        "title": {"ar": "وثائقي", "tr": "Belgesel", "en": "Documentary"},
+        "items": [
+          {"n": {"ar": "الجزيرة الوثائقية", "tr": "El Cezire Belgesel", "en": "Al Jazeera Documentary"}, "yt": "UC0LSnqrwqtMwl2YwfUpO66g", "live": true, "c": "#5D4037", "g": "🌍"}
+        ]
+      }
+    ],
+    "kids": [
+      {
+        "title": {"ar": "للأطفال", "tr": "Çocuklar için", "en": "For children"},
+        "items": [
+          {"n": {"ar": "TRT Çocuk", "tr": "TRT Çocuk", "en": "TRT Çocuk"},
+           "d": {"ar": "رسوم متحركة تركية · بث مباشر", "tr": "Canlı yayın", "en": "Turkish cartoons · live"},
+           "yt": "UCrFf5dtMe6M1XJHqbKJ4X6Q", "live": true, "c": "#F57C00", "g": "🎈"},
+          {"n": {"ar": "TRT ديانت للأطفال", "tr": "TRT Diyanet Çocuk", "en": "TRT Diyanet Çocuk"},
+           "d": {"ar": "قيم إسلامية للصغار", "tr": "Küçükler için değerler", "en": "Islamic values for little ones"},
+           "yt": "UCfxtt5mgO7fAu3Rv_6xMb7Q", "live": false, "c": "#43A047", "g": "🌙"},
+          {"n": {"ar": "جيم", "tr": "Jeem TV", "en": "Jeem TV"},
+           "d": {"ar": "قناة الجزيرة للأطفال", "tr": "Arapça çocuk kanalı", "en": "Arabic children's channel"},
+           "yt": "UCSquc8Ruq68uIX8xPCVQJxw", "live": false, "c": "#7B1FA2", "g": "ج"},
+          {"n": {"ar": "ماجد", "tr": "Majid", "en": "Majid"},
+           "d": {"ar": "مغامرات ماجد", "tr": "Arapça çocuk kanalı", "en": "Arabic children's channel"},
+           "yt": "UC_oLebwj5MT8_hjMxMRSx8g", "live": false, "c": "#0288D1", "g": "م"}
+        ]
+      },
+      {
+        "title": {"ar": "للعائلة", "tr": "Aile için", "en": "For the family"},
+        "items": [
+          {"n": {"ar": "TRT الوثائقية", "tr": "TRT Belgesel", "en": "TRT Belgesel"},
+           "d": {"ar": "طبيعة وتاريخ", "tr": "Doğa ve tarih", "en": "Nature & history"},
+           "yt": "UCalAM_EpRfd9LNlp1AvxO2w", "live": false, "c": "#33691E", "g": "🌿"},
+          {"n": {"ar": "TRT 1", "tr": "TRT 1", "en": "TRT 1"},
+           "d": {"ar": "مسلسلات رسمية كاملة", "tr": "Resmi tam bölümler", "en": "Official full episodes"},
+           "yt": "UCvFudBDDILdDljN4VIZ4Msw", "live": false, "c": "#1A237E", "g": "1"}
+        ]
+      }
+    ],
+    "turkish": [
+      {
+        "title": {"ar": "أخبار تركية", "tr": "Haber", "en": "Turkish news"},
+        "items": [
+          {"n": {"ar": "TRT Haber", "tr": "TRT Haber", "en": "TRT Haber"}, "yt": "UCBgTP2LOFVPmq15W-RH-WXA", "live": true, "c": "#C62828", "g": "T"},
+          {"n": {"ar": "A Haber", "tr": "A Haber", "en": "A Haber"}, "yt": "UCKQhfw-lzz0uKnE1fY1PsAA", "live": true, "c": "#B71C1C", "g": "A"},
+          {"n": {"ar": "Habertürk", "tr": "Habertürk", "en": "Habertürk"}, "yt": "UCn6dNfiRE_Xunu7iMyvD7AA", "live": true, "c": "#E65100", "g": "H"},
+          {"n": {"ar": "CNN Türk", "tr": "CNN Türk", "en": "CNN Türk"}, "yt": "UCV6zcRug6Hqp1UX_FdyUeBg", "live": true, "c": "#AD1457", "g": "C"},
+          {"n": {"ar": "NTV", "tr": "NTV", "en": "NTV"}, "yt": "UC9TDTjbOjFB9jADmPhSAPsw", "live": true, "c": "#1565C0", "g": "N"},
+          {"n": {"ar": "TGRT Haber", "tr": "TGRT Haber", "en": "TGRT Haber"}, "yt": "UCzgrZ-CndOoylh2_e72nSBQ", "live": true, "c": "#4527A0", "g": "T"},
+          {"n": {"ar": "tv100", "tr": "tv100", "en": "tv100"}, "yt": "UCndsdUW_oPLqpQJY9J8oIRg", "live": true, "c": "#00838F", "g": "1"}
+        ]
+      },
+      {
+        "title": {"ar": "منوعات تركية", "tr": "Genel", "en": "General"},
+        "items": [
+          {"n": {"ar": "TRT 1 · المسلسلات", "tr": "TRT 1 · Diziler", "en": "TRT 1 · Series"}, "yt": "UCvFudBDDILdDljN4VIZ4Msw", "live": false, "c": "#1A237E", "g": "1"},
+          {"n": {"ar": "TRT Avaz", "tr": "TRT Avaz", "en": "TRT Avaz"}, "yt": "UCib1E6oJRLd2pXkxqzxyg7A", "live": true, "c": "#6A1B9A", "g": "A"},
+          {"n": {"ar": "TRT الوثائقية", "tr": "TRT Belgesel", "en": "TRT Belgesel"}, "yt": "UCalAM_EpRfd9LNlp1AvxO2w", "live": false, "c": "#33691E", "g": "🌿"},
+          {"n": {"ar": "TRT Çocuk", "tr": "TRT Çocuk", "en": "TRT Çocuk"}, "yt": "UCrFf5dtMe6M1XJHqbKJ4X6Q", "live": true, "c": "#F57C00", "g": "🎈"}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Family TV</string>
+    <string name="tagline">İslami ve aile kanalları</string>
+
+    <string name="nav_home">Ana sayfa</string>
+    <string name="nav_islamic">Harameyn ve İslami</string>
+    <string name="nav_quran">Kur\'an-ı Kerim</string>
+    <string name="nav_prayer">Namaz vakitleri</string>
+    <string name="nav_arabic">Arapça kanallar</string>
+    <string name="nav_kids">Çocuk ve aile</string>
+    <string name="nav_turkish">Türk kanalları</string>
+    <string name="nav_settings">Ayarlar</string>
+
+    <string name="next_prayer">Sıradaki vakit</string>
+    <string name="in_time">%1$s sonra</string>
+    <string name="ayah_of_day">Günün ayeti</string>
+    <string name="quick">Hızlı erişim</string>
+    <string name="live">CANLI</string>
+    <string name="channel">Kanal</string>
+    <string name="opens_youtube">YouTube\'da açılır</string>
+
+    <string name="fajr">İmsak</string>
+    <string name="sunrise">Güneş</string>
+    <string name="dhuhr">Öğle</string>
+    <string name="asr">İkindi</string>
+    <string name="maghrib">Akşam</string>
+    <string name="isha">Yatsı</string>
+    <string name="adhan_now">%1$s vakti girdi</string>
+    <string name="prayer_note">%1$s için televizyonda hesaplandı · %2$s. Camiinizden bir iki dakika farklı olabilir.</string>
+
+    <string name="radios">Kur\'an radyoları</string>
+    <string name="reciters">Kariler</string>
+    <string name="surahs">Sureler</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="load_failed">Yüklenemedi. İnternet bağlantısını kontrol edip yeniden denemek için OK\'a basın.</string>
+    <string name="now_playing">Şimdi çalıyor</string>
+    <string name="pause">Duraklat</string>
+    <string name="play">Oynat</string>
+    <string name="stop">Durdur</string>
+    <string name="back">Geri</string>
+    <string name="surah_n">%1$s Suresi</string>
+    <string name="mp3quran_credit">Ses kayıtları mp3quran.net\'ten</string>
+
+    <string name="city">Şehir</string>
+    <string name="method">Hesaplama yöntemi</string>
+    <string name="asr_method">İkindi</string>
+    <string name="asr_standard">Asr-ı evvel (Şafii, Maliki, Hanbeli)</string>
+    <string name="asr_hanafi">Asr-ı sani (Hanefi)</string>
+    <string name="method_diyanet">Diyanet İşleri Başkanlığı</string>
+    <string name="method_umm_al_qura">Ümmü\'l-Kura (Mekke)</string>
+    <string name="method_mwl">Dünya Müslüman Birliği</string>
+    <string name="method_egypt">Mısır Genel Yetkili Kurumu</string>
+    <string name="method_karachi">Karaçi</string>
+    <string name="method_isna">ISNA (Kuzey Amerika)</string>
+    <string name="about">Ücretsiz, reklamsız ve açık kaynak. Canlı kanallar, yayıncıların kendi kanallarından resmi YouTube uygulamasında açılır.</string>
+    <string name="dedication">Merhum Ahmed Halil\'in ruhu için sadaka-i câriye. Lütfen ruhuna bir Fatiha okuyun.</string>
+    <string name="no_youtube">Bu televizyonda YouTube uygulaması yüklü değil.</string>
+</resources>

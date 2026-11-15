@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android TV launcher banner (320x180). The launcher draws the app name under it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <path android:fillColor="#0B3D2E" android:pathData="M0,0h320v180h-320z" />
+    <!-- faint eight-point star motif -->
+    <path android:fillColor="#145A44"
+        android:pathData="M260,30 L270,54 L294,44 L284,68 L308,78 L284,88 L294,112 L270,102 L260,126 L250,102 L226,112 L236,88 L212,78 L236,68 L226,44 L250,54 Z" />
+    <path android:fillColor="#145A44"
+        android:pathData="M40,120 L46,134 L60,128 L54,142 L68,148 L54,154 L60,168 L46,162 L40,176 L34,162 L20,168 L26,154 L12,148 L26,142 L20,128 L34,134 Z" />
+    <!-- roof + walls -->
+    <path android:strokeColor="#E8C26A" android:strokeWidth="7" android:strokeLineCap="round"
+        android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M100,88 L160,38 L220,88" />
+    <path android:strokeColor="#E8C26A" android:strokeWidth="6" android:strokeLineCap="round"
+        android:strokeLineJoin="round" android:fillColor="#00000000"
+        android:pathData="M117,82 L117,148 L203,148 L203,82" />
+    <!-- crescent + star -->
+    <path android:fillColor="#E8C26A"
+        android:pathData="M160,98m-24,0a24,24 0 1 0 48,0a24,24 0 1 0 -48,0" />
+    <path android:fillColor="#0B3D2E"
+        android:pathData="M169,92m-21,0a21,21 0 1 0 42,0a21,21 0 1 0 -42,0" />
+    <path android:fillColor="#E8C26A"
+        android:pathData="M178,108 L180.7,114.9 L188,115.2 L182.3,119.7 L184.3,126.6 L178,122.6 L171.7,126.6 L173.7,119.7 L168,115.2 L175.3,114.9 Z" />
+</vector>
