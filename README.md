@@ -9,7 +9,7 @@
 ### 📺 Downloader code · رقم Downloader · Downloader kodu: **`4563572`**
 
 **Download:** [Latest release](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest) · [`yt-volume-fix.apk`](https://github.com/basilhalil/youtube-tv-volume-fix/releases/latest/download/yt-volume-fix.apk) (29 KB)
-SHA-256 (v1.2): `dbc22d0d58fdaf27ec00fe372f6037c73e8a7a64b4a415ff825f423adbe1a6ec`
+SHA-256 (v1.3): `12b3bc2b062afa45ab621cfd6ba44c8d960b4b4d35669dff3a3bbe9b1ec4e321`
 
 ---
 
@@ -51,7 +51,7 @@ adb shell settings put secure accessibility_enabled 1
 ### ملاحظات
 - **جُرّب على:** شاشة بلوحة MStar/Cultraview بنظام Android 8.0.
 - **قد لا يعمل** على تلفزيونات تتحكم بالصوت بطريقة خاصة بالشركة المصنّعة (عبر HDMI-CEC أو مكبّر صوت خارجي). إن جرّبته، أخبرنا بالنتيجة في [Issues](../../issues).
-- **آمن على كل الأجهزة (منذ v1.2):** يتعرّف التطبيق بنفسه على جهازك. عند أول ضغطة صوت داخل YouTube يترك الضغطة تمر، ثم يتحقق هل تغيّر الصوت. إذا كانت الأزرار تعمل أصلاً، أو كان الصوت يُدار عبر HDMI-CEC، **لا يتدخل أبداً**، فلا يُفسد الصوت على أي جهاز. ويُظهر لك في شاشته هل يحتاجه تلفزيونك.
+- **آمن على كل الأجهزة (منذ v1.2):** يتعرّف التطبيق بنفسه على جهازك. عند أول ضغطة صوت داخل YouTube يترك الضغطة تمر، ثم يتحقق هل تغيّر الصوت. إذا كانت الأزرار تعمل أصلاً، أو كان الصوت يُدار عبر HDMI-CEC، **لا يتدخل أبداً**، فلا يُفسد الصوت على أي جهاز. ويُظهر لك في شاشته هل يحتاجه تلفزيونك. منذ v1.3 يتعلّم من داخل YouTube فقط، فلا تؤثر عليه أزرار الصوت في مداخل HDMI أو القنوات.
 - إذا أوقفت التطبيق إجبارياً (Force stop) من الإعدادات، يُطفئ Android خدمته تلقائياً، فأعد تفعيلها.
 
 ---
@@ -94,7 +94,7 @@ adb shell settings put secure accessibility_enabled 1
 ### Notes
 - **Tested on:** an MStar / Cultraview TV running Android 8.0.
 - **May not work** on TVs whose maker controls volume in its own way (HDMI-CEC, external sound systems). If you try it, please report the result in [Issues](../../issues).
-- **Safe on any device (since v1.2):** the app learns how your device behaves. On the first volume press inside YouTube it lets the press through and checks whether the volume changed. If the buttons already work, or the volume is controlled over HDMI-CEC, it **never steps in**, so it cannot break volume on any device. Its screen tells you whether your TV needs it.
+- **Safe on any device (since v1.2):** the app learns how your device behaves. On the first volume press inside YouTube it lets the press through and checks whether the volume changed. If the buttons already work, or the volume is controlled over HDMI-CEC, it **never steps in**, so it cannot break volume on any device. Its screen tells you whether your TV needs it. Since v1.3 it learns only from inside YouTube, so volume presses on HDMI inputs or TV channels never affect it.
 - If you **Force stop** the app in Settings, Android turns its service off. Just enable it again.
 
 ---
@@ -137,7 +137,7 @@ adb shell settings put secure accessibility_enabled 1
 ### Notlar
 - **Test edildi:** Android 8.0 çalışan MStar / Cultraview TV.
 - Sesi üreticiye özel yöntemle kontrol eden TV'lerde (HDMI-CEC, harici ses sistemi) **çalışmayabilir**. Denerseniz sonucu [Issues](../../issues) bölümüne yazın.
-- **Her cihazda güvenli (v1.2'den beri):** uygulama cihazınızı kendisi tanır. YouTube'daki ilk ses tuşu basışını geçirir ve sesin değişip değişmediğini kontrol eder. Tuşlar zaten çalışıyorsa veya ses HDMI-CEC ile kontrol ediliyorsa **hiç karışmaz**, bu yüzden hiçbir cihazda sesi bozamaz. Ekranında TV'nizin ona ihtiyacı olup olmadığını gösterir.
+- **Her cihazda güvenli (v1.2'den beri):** uygulama cihazınızı kendisi tanır. YouTube'daki ilk ses tuşu basışını geçirir ve sesin değişip değişmediğini kontrol eder. Tuşlar zaten çalışıyorsa veya ses HDMI-CEC ile kontrol ediliyorsa **hiç karışmaz**, bu yüzden hiçbir cihazda sesi bozamaz. Ekranında TV'nizin ona ihtiyacı olup olmadığını gösterir. v1.3'ten beri yalnızca YouTube içinden öğrenir; HDMI girişlerindeki veya TV kanallarındaki ses tuşları onu etkilemez.
 - Uygulamayı Ayarlar'dan **Zorla durdurursanız**, Android hizmetini kapatır. Tekrar etkinleştirmeniz yeterli.
 
 ---

@@ -23,13 +23,15 @@ import java.util.Set;
  * On some TVs the system hands the remote's volume keys to the app in front instead of handling
  * them itself, and the YouTube TV app swallows them. This service only steps in on such devices.
  *
- * It never assumes: it learns how the device behaves and stays out of the way when it is not needed.
+ * It never assumes: it learns how the device behaves, only from what happens inside YouTube, and
+ * stays out of the way when it is not needed. Volume presses outside YouTube are never looked at:
+ * on many TVs the HDMI inputs and TV channels use the TV's own volume, which says nothing about YouTube.
  *  - Fixed-volume devices (sticks that control the TV over HDMI-CEC): never touches the keys.
- *  - Outside YouTube, if the volume keys do not move the media volume, the device controls volume
- *    some other way: the app turns itself off for good (UNSUPPORTED).
  *  - Inside YouTube, the first press is let through and checked a moment later. If the volume
  *    changed, the device works on its own (NATIVE) and the app stays out of the way. If not,
- *    YouTube swallowed it (FIX): the app applies that press, and from then on handles the keys itself.
+ *    YouTube swallowed it (FIX): the app applies that press itself.
+ *  - That first fix is then checked too: if even the app's own change did not move the volume,
+ *    this TV controls volume some other way (UNSUPPORTED) and the app stays out of the way.
  */
 public class VolumeKeyService extends AccessibilityService {
     static final Set<String> YOUTUBE_APPS = new HashSet<String>(Arrays.asList(
@@ -43,16 +45,29 @@ public class VolumeKeyService extends AccessibilityService {
     static final int MODE_UNKNOWN = 0;      // not learned yet
     static final int MODE_FIX = 1;          // YouTube swallows the keys here: we handle them
     static final int MODE_NATIVE = 2;       // the keys already work in YouTube: do nothing
-    static final int MODE_UNSUPPORTED = 3;  // volume is not the media stream on this TV: do nothing
+    static final int MODE_UNSUPPORTED = 3;  // even our own change does not move the volume: do nothing
+
+    /** Bumped when the learning rules change, so results learned by older rules are thrown away. */
+    static final String KEY_LOGIC = "logic";
+    static final int LOGIC_VERSION = 2;
 
     private static final int CHECK_DELAY_MS = 350;
-    private static final int UNSUPPORTED_AFTER = 3; // consecutive "no change" presses outside YouTube
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private volatile String foreground = "";
     private int mode = MODE_UNKNOWN;
     private boolean probing = false;
-    private int noChangeOutside = 0;
+
+    /**
+     * v1.2 could wrongly decide "unsupported" from volume presses on HDMI inputs or TV channels.
+     * Forget anything learned by older rules. Called by the service and by the app screen.
+     */
+    static void migrate(Context ctx) {
+        SharedPreferences sp = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        if (sp.getInt(KEY_LOGIC, 1) < LOGIC_VERSION) {
+            sp.edit().putInt(KEY_MODE, MODE_UNKNOWN).putInt(KEY_LOGIC, LOGIC_VERSION).commit();
+        }
+    }
 
     // Kept as a field: SharedPreferences holds listeners weakly.
     private final SharedPreferences.OnSharedPreferenceChangeListener onPrefs =
@@ -64,6 +79,7 @@ public class VolumeKeyService extends AccessibilityService {
 
     @Override
     protected void onServiceConnected() {
+        migrate(this);
         SharedPreferences sp = getSharedPreferences(PREFS, MODE_PRIVATE);
         mode = sp.getInt(KEY_MODE, MODE_UNKNOWN);
         sp.registerOnSharedPreferenceChangeListener(onPrefs);
@@ -109,10 +125,8 @@ public class VolumeKeyService extends AccessibilityService {
 
         boolean firstDown = event.getAction() == KeyEvent.ACTION_DOWN && event.getRepeatCount() == 0;
 
-        if (!youtubeInFront()) {
-            if (firstDown && code != KeyEvent.KEYCODE_VOLUME_MUTE) watchOutsideYouTube(am, code);
-            return false;
-        }
+        // Outside YouTube: never touch the keys and never learn from them.
+        if (!youtubeInFront()) return false;
 
         if (mode == MODE_FIX) {
             if (event.getAction() == KeyEvent.ACTION_DOWN) adjust(am, code, event.getRepeatCount());
@@ -139,21 +153,18 @@ public class VolumeKeyService extends AccessibilityService {
                 } else {
                     setMode(MODE_FIX);                  // swallowed: apply this press, handle the rest
                     adjust(am, code, 0);
+                    verifyOwnFix(am, before);
                 }
             }
         }, CHECK_DELAY_MS);
     }
 
-    private void watchOutsideYouTube(final AudioManager am, final int code) {
-        final int before = am.getStreamVolume(AudioManager.STREAM_MUSIC);
-        final int max = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-        if (atLimit(code, before, max)) return;
+    /** If even our own change did not move the volume, this TV controls volume another way. */
+    private void verifyOwnFix(final AudioManager am, final int before) {
         handler.postDelayed(new Runnable() {
             @Override public void run() {
-                if (am.getStreamVolume(AudioManager.STREAM_MUSIC) != before) {
-                    noChangeOutside = 0;                // media volume is what the keys control: good
-                } else if (++noChangeOutside >= UNSUPPORTED_AFTER) {
-                    setMode(MODE_UNSUPPORTED);          // this TV controls volume another way
+                if (mode == MODE_FIX && am.getStreamVolume(AudioManager.STREAM_MUSIC) == before) {
+                    setMode(MODE_UNSUPPORTED);
                 }
             }
         }, CHECK_DELAY_MS);

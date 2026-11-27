@@ -102,6 +102,7 @@ public class MainActivity extends Activity {
 
     /** Tells the user plainly whether their device needs the app, based on what the service learned. */
     private void refreshStatus() {
+        VolumeKeyService.migrate(this);
         AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
         int mode = getSharedPreferences(VolumeKeyService.PREFS, MODE_PRIVATE)
                 .getInt(VolumeKeyService.KEY_MODE, VolumeKeyService.MODE_UNKNOWN);
